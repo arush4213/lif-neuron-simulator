@@ -31,6 +31,7 @@ for t in range(steps):
     if voltage >= threshold:                      
         spike_times.append(t)                
         spike_values.append(voltage)
+        voltage_history.append(voltage)
         voltage = 0.0                             
         refrac_timer = refractory_period          
     voltage_history.append(voltage)  
